@@ -1,3 +1,17 @@
+# Quick Notes
+If you are here for the structure visualizer in the map mode scroll bar visual studio extension, the .vsix  download link is here:
+
+[Download for VS2017](https://github.com/FS-NulL/VS-PPT/releases/download/1.0/Microsoft.VisualStudio.PowerTools.StructureVisualizer.vsix)
+
+## Angry Rant
+Microsoft refused to bring back the structure visualizer in the map mode scroll bar to VS2017. It was formerly in VS2015 PPT. So after waiting over 400 days, I've found the original source and  brought it back.
+
+I'm only interested in brining back the structure visualizer in the map mode scrollbar. Most of the other features are in VS2017's PPT already.
+
+This extension can be installed along side VS2017's PPT if you have that installed already.
+
+If you want the structure visualizer that was adorned inside the code view, as coloured vertical lines, this can be truned on by modifying the code. Change the default value of StructureAdornmentEnabledOption to true inside the file Options.cs and recompile.
+
 # Visual Studio Productivity Power Tools
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](http://aka.ms/a3wtsx)
 
