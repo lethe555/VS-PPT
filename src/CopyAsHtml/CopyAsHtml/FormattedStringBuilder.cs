@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using CopyAsHtml;
-using Microsoft.VisualStudio.Language.Intellisense.Utilities;
+//using Microsoft.VisualStudio.Language.Intellisense.Utilities;
 using Microsoft.VisualStudio.Text.Classification;
 
 namespace Microsoft.VisualStudio.Text.Formatting.Implementation

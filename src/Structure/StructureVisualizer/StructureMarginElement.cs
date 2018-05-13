@@ -21,7 +21,7 @@ namespace Microsoft.VisualStudio.PowerTools.StructureVisualizer
         private readonly IWpfTextView _textView;
         private readonly IVerticalScrollBar _scrollBar;
 
-        private ITagAggregator<IBlockTag> _tagger;
+        private ITagAggregator<Microsoft.PowerToolsEx.BlockTagger.IBlockTag> _tagger;
         private BlockColoring _coloring;
         private const double marginWidth = 25.0;
         private const double lineWidth = 2.0;
@@ -80,7 +80,7 @@ namespace Microsoft.VisualStudio.PowerTools.StructureVisualizer
                 {
                     SnapshotPoint position = _scrollBar.GetBufferPositionOfYCoordinate(pt.Y);
 
-                    IBlockTag deepestTag = null;
+                    Microsoft.PowerToolsEx.BlockTagger.IBlockTag deepestTag = null;
                     var tags = _tagger.GetTags(new SnapshotSpan(position, 0));
                     foreach (var tagSpan in tags)
                     {
@@ -188,7 +188,7 @@ namespace Microsoft.VisualStudio.PowerTools.StructureVisualizer
                 _coloring = new BlockColoring(_formatMap, 1.0);
                 _coloring.Changed += this.OnColoringChanged;
 
-                _tagger = _factory.TagAggregatorFactoryService.CreateTagAggregator<IBlockTag>(_textView);
+                _tagger = _factory.TagAggregatorFactoryService.CreateTagAggregator<Microsoft.PowerToolsEx.BlockTagger.IBlockTag>(_textView);
                 _tagger.BatchedTagsChanged += OnTagsChanged;
 
                 //Force the margin to be re-rendered since things might have changed while the margin was hidden.
@@ -257,7 +257,7 @@ namespace Microsoft.VisualStudio.PowerTools.StructureVisualizer
             }
         }
 
-        private void DrawBlock(DrawingContext drawingContext, IMappingTagSpan<IBlockTag> tag, bool methodHighlights)
+        private void DrawBlock(DrawingContext drawingContext, IMappingTagSpan<Microsoft.PowerToolsEx.BlockTagger.IBlockTag> tag, bool methodHighlights)
         {
             if (methodHighlights
                 ? (tag.Tag.Type == BlockType.Method)
