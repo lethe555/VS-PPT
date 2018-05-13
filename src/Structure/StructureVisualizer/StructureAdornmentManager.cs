@@ -389,6 +389,7 @@ namespace Microsoft.VisualStudio.PowerTools.StructureVisualizer
 
             Canvas.SetLeft(image, x);
             Canvas.SetTop(image, yTop);
+            
             _layer.AddAdornment(AdornmentPositioningBehavior.TextRelative, span, block, image, OnAdornmentRemoved);
 
             _visibleBlocks.Add(block);

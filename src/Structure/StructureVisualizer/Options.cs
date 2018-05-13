@@ -23,7 +23,7 @@ namespace Microsoft.VisualStudio.PowerTools.StructureVisualizer
         public const string OptionName = "StructureAdornmentEnabled";
         public readonly static EditorOptionKey<bool> OptionKey = new EditorOptionKey<bool>(StructureAdornmentEnabledOption.OptionName);
 
-        public override bool Default { get { return true; } }
+        public override bool Default { get { return false; } }
 
         public override EditorOptionKey<bool> Key { get { return StructureAdornmentEnabledOption.OptionKey; } }
     }
