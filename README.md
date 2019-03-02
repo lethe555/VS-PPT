@@ -2,6 +2,7 @@
 If you are here for the structure visualizer in the map mode scroll bar visual studio extension, the .vsix  download link is here:
 
 [Download for VS2019](https://github.com/FS-NulL/VS-PPT/releases/download/2019/Microsoft.VisualStudio.PowerTools.StructureVisualizer.vsix)
+
 [Download for VS2017](https://github.com/FS-NulL/VS-PPT/releases/download/1.0/Microsoft.VisualStudio.PowerTools.StructureVisualizer.vsix)
 
 ## Angry Rant
