@@ -128,7 +128,8 @@ namespace Microsoft.PowerToolsEx.BlockTagger.Implementation
                                            FlowDirection.LeftToRight,
                                            properties.Typeface,
                                            properties.FontRenderingEmSize,
-                                           properties.ForegroundBrush);
+                                           properties.ForegroundBrush,                                           
+                                           VisualTreeHelper.GetDpi(Application.Current.MainWindow).PixelsPerDip);
 
             if (coloring != null)
             {
