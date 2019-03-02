@@ -87,9 +87,17 @@
     <Compile Include="StructureMargin.cs" />
     <Compile Include="StructureMarginElement.cs" />
     <Compile Include="StructureMarginFactory.cs" />
+    <Content Include="license.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="StructureColors.pkgdef">
       <IncludeInVSIX>true</IncludeInVSIX>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="StructureVisualizer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
     <EmbeddedResource Include="Strings.resx">
       <SubType>Designer</SubType>
