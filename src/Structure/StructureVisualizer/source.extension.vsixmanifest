@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="StructureVisualizer2019.Jonathan.F4B54E0E-E967-4B12-9A35-A3E03F9D3938" Version="2019.0" Language="en-US" Publisher="Jonathan" />
+        <Identity Id="StructureVisualizer2019.Jonathan.F4B54E0E-E967-4B12-9A35-A3E03F9D3938" Version="2019.1" Language="en-US" Publisher="Jonathan" />
         <DisplayName>Structure Visualizer In Map Mode Scrollbar</DisplayName>
         <Description xml:space="preserve">This extension displays the block structure of code files in the map mode scroll bar.</Description>
         <License>license.txt</License>
