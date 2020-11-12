@@ -7,7 +7,7 @@ namespace Microsoft.VisualStudio.PowerTools.OptionsPage
 {
     [PackageRegistration(UseManagedResourcesOnly = true)]
     [Guid(PackageGuidString)]
-    [ProvideOptionPage(typeof(OptionsPage), "Productivity Power Tools", "Other Extensions", 2000, 2010, true, keywordListResourceName: "ToolsOptionsKeywords")]
+    [ProvideOptionPage(typeof(OptionsPage), "Productivity Power Tools", "General", 2000, 2010, true, keywordListResourceName: "ToolsOptionsKeywords")]
     // Automatically load the package after 5 seconds if it hasn't be loaded already
     [ProvideUIContextRule(ContextGuidString,
                           name: "AutoLoad Settings Sync",

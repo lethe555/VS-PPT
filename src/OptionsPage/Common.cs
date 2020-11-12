@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.ComponentModelHost;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio;
 using System;
 using System.Runtime.InteropServices;
 using IOLEServiceProvider = Microsoft.VisualStudio.OLE.Interop.IServiceProvider;

@@ -102,7 +102,7 @@ namespace Microsoft.PowerToolsEx.BlockTagger.Implementation
 
             int indent = 0;
             StringBuilder b = new StringBuilder();
-            while (true)
+            while (stack.Count != 0)
             {
                 context = stack.Pop();
                 b.Append(context._statement);
